@@ -25,6 +25,7 @@ find_package(nav_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_kdl REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 find_package(oxts_msgs REQUIRED)
 
 message(STATUS "current source dir: ${CMAKE_CURRENT_SOURCE_DIR}")
@@ -50,6 +51,7 @@ ament_target_dependencies(tests
         nav_msgs
         tf2
         tf2_kdl
+        tf2_geometry_msgs
         oxts_msgs)
 
 add_custom_command(
